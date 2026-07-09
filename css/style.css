@@ -1,0 +1,60 @@
+/* Inter google font import  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/* Reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common style  */
+.btn-primary {
+    border: none;
+    background: #1D4ED8;
+    color: white;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+
+}
+
+body {    
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background: #00000028;  */
+    font-family: "Inter", sans-serif;
+}
+
+/* Navbar Style  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem 3rem;
+    background: white;
+}
+
+.navbar .logo img {
+    max-width: 7.5rem;
+}
+
+.navbar .nav-items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar .nav-items a { 
+    text-decoration: none;
+    color: #575757;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.navbar .nav-items a:hover {     
+    color: #1D4ED8;    
+}
