@@ -21,10 +21,28 @@
 
 }
 
+.section-header {
+    text-align: center;    
+}
+
+.section-header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.section-header p {
+    text-align: center;
+    font-size: 1rem;
+    color: #575757;
+    margin-top: 0.8rem;
+}
+
+
+
 body {    
     max-width: 1200px;
     margin: 0 auto;
-    /* background: #00000028;  */
+    background: #00000028; 
     font-family: "Inter", sans-serif;
 }
 
@@ -103,11 +121,6 @@ body {
     padding: 0 1.25rem;
 }
 
-.section-heading h1 {
-    text-align: center;
-    font-size: 2.5rem;
-}
-
 .speakers-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -151,4 +164,106 @@ body {
     font-size: 0.85rem;
     color: #575757; 
     margin-bottom: 0.5rem;
+}
+
+/* pricing-section style  */
+.pricing-section {
+    margin: 5rem 0;
+    padding: 0 1.25rem;
+}
+
+.pricing-section .pricing-plan-container {
+    padding: 0 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.pricing-plan-container .plan-card {
+    padding: 2rem;
+    background: white;
+    border: 1px solid #E5E7EB;
+    border-radius: 0.5rem;
+}
+
+.plan-card hr {
+    border: none;
+    height: 1px;
+    background: #E5E7EB;
+    margin: 1.5rem 0;
+}
+
+.plan-card .plan-card-header .plan-name {
+    font-size: 0.81rem;
+    color: #888888;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.plan-card .plan-card-header .plan-price {
+    font-size: 3rem;
+    color: #0D1B2A;
+    margin: 0.2rem 0;
+}
+
+.plan-card .plan-card-header .plan-duration {
+    font-size: 0.81rem;
+    color: #888888;
+}
+
+.plan-card .plan-feature-list {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    
+}
+
+.plan-card .plan-feature-list li {
+    margin-bottom: 0.8rem;
+    color: #333333;
+}
+
+.plan-card .plan-feature-list li::marker {
+    color: #1D4ED8;
+}
+
+.plan-card .plan-card-bottom {
+    margin-top: 1.8rem;
+    
+}
+
+.plan-card .plan-card-bottom button {
+    width: 100%;
+    border: 2px solid #1D4ED8;
+    color: #1D4ED8;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    padding: 0.8rem 0;
+    cursor: pointer;
+}
+
+.pricing-plan-container #pro-plan-card {
+    background: #0D1B2A;
+    color: white;
+}
+
+#pro-plan-card .plan-card-header .plan-name {    
+    color: #93C5FD;
+}
+
+#pro-plan-card .plan-card-header .plan-price {    
+    color: white;
+}
+
+#pro-plan-card hr {
+    background: #e5e7eb8e;
+}
+
+#pro-plan-card .plan-feature-list li {    
+    color: white;
+}
+
+#pro-plan-card .plan-card-bottom button {    
+    background: #1D4ED8;
+    color: white;
 }
