@@ -24,7 +24,7 @@
 body {    
     max-width: 1200px;
     margin: 0 auto;
-    background: #00000028; 
+    /* background: #00000028;  */
     font-family: "Inter", sans-serif;
 }
 
@@ -95,4 +95,60 @@ body {
 .banner-content .btn-primary {
     font-size: 1.3rem;
     margin-top: 4rem;
+}
+
+/* meet-the-speakers section style  */
+.meet-the-speakers {
+    margin: 4.5rem 0;
+    padding: 0 1.25rem;
+}
+
+.section-heading h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.speakers-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem;
+    margin-top: 3rem; 
+}
+
+.speaker-card {
+    background: white;
+    border-radius: 0.7rem;
+    border: 1px solid #57575725;
+    transition: all 0.3s;
+}
+
+.speaker-card:hover {
+    border-color: #1d4fd877;
+}
+
+.speaker-card .speaker-photo {
+    width: 100%;
+    border-radius: 0.7rem 0.7rem 0 0;    
+}
+
+.speaker-card .speaker-details {
+    padding: 1rem;
+}
+
+.speaker-card .speaker-details .category {
+    color: #1D4ED8;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.speaker-card .speaker-details .speaker-name {    
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin: 0.3rem 0;
+}
+
+.speaker-card .speaker-details .speaker-company {        
+    font-size: 0.85rem;
+    color: #575757; 
+    margin-bottom: 0.5rem;
 }
