@@ -42,7 +42,7 @@
 body {    
     max-width: 1200px;
     margin: 0 auto;
-    background: #00000028; 
+    /* background: #00000028;  */
     font-family: "Inter", sans-serif;
 }
 
@@ -240,6 +240,13 @@ body {
     border-radius: 0.5rem;
     padding: 0.8rem 0;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.plan-card .plan-card-bottom button:hover {    
+    color: white;
+    background: #1D4ED8;
+    
 }
 
 .pricing-plan-container #pro-plan-card {
@@ -264,6 +271,149 @@ body {
 }
 
 #pro-plan-card .plan-card-bottom button {    
+    background: #1D4ED8;
+    color: white;
+}
+
+/* Where developers converge / vanue section style  */
+.venue-card {
+    background: white;
+    margin: 3rem;
+    padding: 3rem 3rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+}
+
+.venue-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.venue-card-header .venue-info h2 {
+    font-size: 1.7rem;
+    color: #0B1A33;
+}
+
+.venue-card-header .venue-info p {
+    font-size: 0.9rem;
+    color: #1D4ED8;
+    font-weight: 600;
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.venue-card-header .venue-info hr {
+    border: none;
+    height: 3px;
+    width: 55px;
+    border-radius: 1rem;
+    background: #1D4ED8;
+}
+
+.venue-card-header .vanue-header-badge {
+    background: #1D4ED8;
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.6rem 1rem;
+    border-radius: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: 0 10px 25px rgba(0, 47, 255, 0.2);
+
+}
+
+.venue-card .venue-description {
+    margin: 1.5rem 0;
+    max-width: 80%;
+}
+
+.venue-card .venue-description p {
+    font-size: 0.9rem;
+    color: #3d4e67;
+    line-height: 1.5;
+}
+
+.venue-card .venue-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+
+.venue-details .venue-detail-item {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.venue-details .venue-detail-item hr {
+    border: none;
+    height: 100%;
+    width: 3px;
+    background: #1D4ED8;
+}
+
+.venue-detail-content .venue-detail-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #7a8aa0;
+    margin-bottom: 0.2rem;
+}
+
+.venue-detail-content .venue-detail-value {
+    color: #0b1a33;
+    font-size: 0.9rem;
+}
+
+.vanue-extra-facilities {
+    display: flex;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.vanue-extra-facilities .facilitie-card{
+    background: rgba(29, 78, 216, 0.09);
+    color: #1D4ED8;
+    font-size: 0.6rem;
+    padding: 0.3rem 0.9rem;
+    border-radius: 0.8rem;
+    transition: all 0.3s;
+    border: 1px solid rgba(0, 47, 255, 0.1);
+}
+
+.vanue-extra-facilities .facilitie-card:hover {
+    background: rgba(29, 78, 216, 0.2);    
+}
+
+.venue-action-buttons {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.venue-action-buttons button{
+    padding: 0.9rem 2rem;
+    border: 1px solid #7a8aa071;
+    border-radius: 2rem;
+    font-weight: 700;
+    background: #1D4ED8;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.venue-action-buttons .btn-get-direction:hover {
+    box-shadow: 0 10px 25px rgba(0, 47, 255, 0.2);
+}
+
+.venue-action-buttons .btn-add-to-calender {
+    background: white;
+    border-color: #1D4ED8;
+    color: #1D4ED8;
+}
+
+.venue-action-buttons .btn-add-to-calender:hover {
     background: #1D4ED8;
     color: white;
 }
